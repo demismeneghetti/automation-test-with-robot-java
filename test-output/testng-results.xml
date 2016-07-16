@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="85" started-at="2016-07-16T00:07:49Z" finished-at="2016-07-16T00:07:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="85" started-at="2016-07-16T00:07:49Z" finished-at="2016-07-16T00:07:49Z">
+      <class name="br.com.gmail.test.cadastro.TestFluxoDeCadastro">
+        <test-method status="PASS" signature="loginEmBranco()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginEmBranco" duration-ms="26" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEmBranco -->
+        <test-method status="PASS" signature="loginInvalido()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginInvalido" duration-ms="5" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInvalido -->
+        <test-method status="PASS" signature="loginSemSenha()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginSemSenha" duration-ms="2" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSemSenha -->
+        <test-method status="PASS" signature="loginSemUsuario()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginSemUsuario" duration-ms="3" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSemUsuario -->
+        <test-method status="PASS" signature="loginValido()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginValido" duration-ms="1" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValido -->
+      </class> <!-- br.com.gmail.test.cadastro.TestFluxoDeCadastro -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
