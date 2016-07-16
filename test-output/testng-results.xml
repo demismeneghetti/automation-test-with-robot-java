@@ -1,32 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="16" passed="16">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="85" started-at="2016-07-16T00:07:49Z" finished-at="2016-07-16T00:07:49Z">
+  <suite name="Default suite" duration-ms="112" started-at="2016-07-16T00:58:51Z" finished-at="2016-07-16T00:58:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="85" started-at="2016-07-16T00:07:49Z" finished-at="2016-07-16T00:07:49Z">
-      <class name="br.com.gmail.test.cadastro.TestFluxoDeCadastro">
-        <test-method status="PASS" signature="loginEmBranco()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginEmBranco" duration-ms="26" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+    <test name="Default test" duration-ms="112" started-at="2016-07-16T00:58:51Z" finished-at="2016-07-16T00:58:51Z">
+      <class name="br.com.gmail.test.login.TestFluxoLogin">
+        <test-method status="PASS" signature="loginEmBranco()[pri:0, instance:br.com.gmail.test.login.TestFluxoLogin@53b32d7]" name="loginEmBranco" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginEmBranco -->
-        <test-method status="PASS" signature="loginInvalido()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginInvalido" duration-ms="5" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+        <test-method status="PASS" signature="loginInvalido()[pri:0, instance:br.com.gmail.test.login.TestFluxoLogin@53b32d7]" name="loginInvalido" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginInvalido -->
-        <test-method status="PASS" signature="loginSemSenha()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginSemSenha" duration-ms="2" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+        <test-method status="PASS" signature="loginSemSenha()[pri:0, instance:br.com.gmail.test.login.TestFluxoLogin@53b32d7]" name="loginSemSenha" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSemSenha -->
-        <test-method status="PASS" signature="loginSemUsuario()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginSemUsuario" duration-ms="3" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+        <test-method status="PASS" signature="loginSemUsuario()[pri:0, instance:br.com.gmail.test.login.TestFluxoLogin@53b32d7]" name="loginSemUsuario" duration-ms="1" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSemUsuario -->
-        <test-method status="PASS" signature="loginValido()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@39c0f4a]" name="loginValido" duration-ms="1" started-at="2016-07-15T21:07:49Z" finished-at="2016-07-15T21:07:49Z">
+        <test-method status="PASS" signature="loginValido()[pri:0, instance:br.com.gmail.test.login.TestFluxoLogin@53b32d7]" name="loginValido" duration-ms="1" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginValido -->
+      </class> <!-- br.com.gmail.test.login.TestFluxoLogin -->
+      <class name="br.com.gmail.test.cadastro.TestFluxoDeCadastro">
+        <test-method status="PASS" signature="cadastroSemAnoDeNascimeto()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemAnoDeNascimeto" duration-ms="29" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemAnoDeNascimeto -->
+        <test-method status="PASS" signature="cadastroSemConfirmacaoDePassword()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemConfirmacaoDePassword" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemConfirmacaoDePassword -->
+        <test-method status="PASS" signature="cadastroSemDiaDeNascimeto()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemDiaDeNascimeto" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemDiaDeNascimeto -->
+        <test-method status="PASS" signature="cadastroSemEmailAtual()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemEmailAtual" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemEmailAtual -->
+        <test-method status="PASS" signature="cadastroSemGenero()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemGenero" duration-ms="1" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemGenero -->
+        <test-method status="PASS" signature="cadastroSemMesDeNascimeto()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemMesDeNascimeto" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemMesDeNascimeto -->
+        <test-method status="PASS" signature="cadastroSemPrimeiroNova()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemPrimeiroNova" duration-ms="1" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemPrimeiroNova -->
+        <test-method status="PASS" signature="cadastroSemTelefone()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemTelefone" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemTelefone -->
+        <test-method status="PASS" signature="cadastroSemUserName()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroSemUserName" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroSemUserName -->
+        <test-method status="PASS" signature="cadastroValido()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadastroValido" duration-ms="1" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadastroValido -->
+        <test-method status="PASS" signature="cadsatroSemPassword()[pri:0, instance:br.com.gmail.test.cadastro.TestFluxoDeCadastro@42e26948]" name="cadsatroSemPassword" duration-ms="2" started-at="2016-07-15T21:58:51Z" finished-at="2016-07-15T21:58:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cadsatroSemPassword -->
       </class> <!-- br.com.gmail.test.cadastro.TestFluxoDeCadastro -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
