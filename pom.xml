@@ -9,6 +9,11 @@
 	<name>automation-test-template</name>
 	<description>Esse projeto tem como objetivo ser a base inicial para automação de testes, contendo as principais classes e métodos reutilizáveis em quaisquer projetos de teste. </description>
 
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>

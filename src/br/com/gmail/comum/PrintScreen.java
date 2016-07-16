@@ -32,9 +32,9 @@ public class PrintScreen {
 		int x = Toolkit.getDefaultToolkit().getScreenSize().height;
 		
 		// Implementar codigo para extrair nome da classe de teste para a nomenclatura do arquivo de evidencia.
-		String nomeDoArquivoDeEvidencia = dataHoraDaExecucao + " Evid�ncia de teste." + Property.FORMATO;
+		String nomeDoArquivoDeEvidencia = dataHoraDaExecucao + " Evidência de teste." + Property.FORMATO;
 
-		// Captura a tela na �rea definida pelo ret�ngulo define as posi��es
+		// Captura a tela na área definida pelo retângulo define as posições
 		// x/y.
 		BufferedImage bi = robot.createScreenCapture(new Rectangle(0, 0, y, x));
 
