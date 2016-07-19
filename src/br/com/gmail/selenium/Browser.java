@@ -1,7 +1,7 @@
 package br.com.gmail.selenium;
 
 /*
- * Classe para definir as vari�veis de identifi��o dos browsers
+ * Classe para definir as variáveis de identifição dos browsers.
  */
 public class Browser {
 

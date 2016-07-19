@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /*
- * Classe que define o caminho dos diferentes browsers e retorna as configura��es definidas no config.properties
+ * Classe que define o caminho dos diferentes browsers e retorna as configurações definidas no config.properties
  */
 public class Property {
 	
@@ -15,7 +15,7 @@ public class Property {
 	public static String PHANTOMJS_DRIVE_PATH;
 	public static String HTML_UNIT_DRIVE_PATH;
 
-	public static final String PROPERTIES_FILE = "br/com/cea/config.properties";
+	public static final String PROPERTIES_FILE = "br/com/gmail/config.properties";
 	public static final String BROWSER_NAME;
 	public static final String SITE_ADDRESS;
 	public static final String USERNAME;
@@ -27,8 +27,8 @@ public class Property {
 	static {
 
 		IE_DRIVE_PATH = new File("../").getAbsolutePath() + "\\IEDriverServer32.exe";
-		FIREFOX_DRIVE_PATH = new File("").getAbsolutePath() + "%PROGRAMFILES%\\Mozilla Firefox\\firefox.exe";
-		CHROME_DRIVE_PATH = new File("../").getAbsolutePath() + "\\chromedriver.exe";
+		FIREFOX_DRIVE_PATH = new File("").getAbsolutePath() + "\\Applications\\Firefox.app";
+		CHROME_DRIVE_PATH = new File("../").getAbsolutePath() + "\\Applications\\Google Chrome.app";
 		PHANTOMJS_DRIVE_PATH = new File("../").getAbsolutePath() + "\\phantomjs.exe";
 
 		BROWSER_NAME = get("browser.name");

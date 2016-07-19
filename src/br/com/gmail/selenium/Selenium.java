@@ -15,7 +15,7 @@ import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 /*
- * Classe para identificar qual o browser foi escolhido e o inicializa apenas uma vez por execu��o
+ * Classe para identificar qual o browser foi escolhido e o inicializa apenas uma vez por execução.
  */
 public class Selenium {
 

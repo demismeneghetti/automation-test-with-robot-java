@@ -3,17 +3,20 @@ package br.com.gmail.comum;
 import java.io.File;
 import java.io.IOException;
 
+import org.testng.annotations.Test;
+
 import jxl.Cell;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
 
-public class LerDadosXls {
+public class LerDadosTestXls {
 
-	public static void main(String[] args) throws BiffException, IOException {
+	@Test
+	public static void pegaDados() throws BiffException, IOException {
 
-		/*********************************************************************
-		 * Carrega a planilha
+		/********************************************************************* 
+		 * Carrega a planilha 
 		 ***/
 		Workbook workbook = Workbook.getWorkbook(new File("input//teste.xls"));
 
@@ -24,7 +27,7 @@ public class LerDadosXls {
 		Sheet sheet = workbook.getSheet(0);
 
 		/*********************************************************************
-		 * Numero de linhas com dados do xls
+		 * Numero de linhas com dados do xls 
 		 ***/
 		int linhas = sheet.getRows();
 
