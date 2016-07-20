@@ -16,10 +16,10 @@ import org.testng.annotations.Test;
 
 import br.com.gmail.selenium.Property;
 
-public class PrintScreen {
+public class GerarEvidencia {
 
 	@Test
-	public static void geraEvidenciaDeTeste() throws AWTException, IOException {
+	public static void print() throws AWTException, IOException {
 
 		Date dataHoje = new Date();
 
@@ -31,17 +31,19 @@ public class PrintScreen {
 		int y = Toolkit.getDefaultToolkit().getScreenSize().width;
 		int x = Toolkit.getDefaultToolkit().getScreenSize().height;
 		
+		robot.delay(3000);
+		
 		// Implementar codigo para extrair nome da classe de teste para a nomenclatura do arquivo de evidencia.
-		String nomeDoArquivoDeEvidencia = dataHoraDaExecucao + " EvidÃªncia de teste." + Property.FORMATO;
+		String nomeDoArquivoDeEvidencia = dataHoraDaExecucao + " Evidência de teste." + Property.FORMATO;
 
-		// Captura a tela na Ã¡rea definida pelo retÃ¢ngulo define as posiÃ§Ãµes
+		// Captura a tela na àrea definida pelo retângulo define as posições
 		// x/y.
+		robot.delay(3000);
 		BufferedImage bi = robot.createScreenCapture(new Rectangle(0, 0, y, x));
-
+		robot.delay(3000);
+		
 		// Salva a imagem
 		ImageIO.write(bi, Property.FORMATO, new File(Property.CAMINHO_EVIDENCIA + nomeDoArquivoDeEvidencia));
-		
-		robot.delay(1000);
 		
 	}
 }

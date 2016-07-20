@@ -4,7 +4,7 @@ import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.InputEvent;
 
-public class Mouse {
+public class MouseVirtual {
 
 	public static void clicaAreaDaTela(int x, int y) throws AWTException {
 
