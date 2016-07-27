@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import br.com.gmail.selenium.Property;
 import br.com.gmail.selenium.Selenium;
 
-public class Inicial {
+public class InicialPage {
 
 	private static final WebDriver driver;
 
@@ -33,7 +33,7 @@ public class Inicial {
 
 	}
 
-	public static void criarUmaConta() {
+	public static void CadastroDeNovaContaPage() {
 
 		WebElement btnCriarUmaConta = driver.findElement(By.id("gmail-create-account"));
 		btnCriarUmaConta.click();

@@ -2,15 +2,15 @@ package br.com.gmail.test.login;
 
 import org.testng.annotations.Test;
 
-import br.com.gmail.pages.Inicial;
+import br.com.gmail.pages.InicialPage;
 
 public class TestFluxoLogin {
 
 	@Test
 	public static void loginValido() {
 
-		Inicial.visita();
-		Inicial.login();
+		InicialPage.visita();
+		InicialPage.login();
 		
 	}
 

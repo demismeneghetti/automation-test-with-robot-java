@@ -1,5 +1,6 @@
 package br.com.gmail.pages;
 
-public class Cadastra {
+public class LoginPage {
+
 
 }
