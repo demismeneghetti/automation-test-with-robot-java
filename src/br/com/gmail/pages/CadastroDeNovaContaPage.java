@@ -1,11 +1,14 @@
 package br.com.gmail.pages;
 
+import java.awt.AWTException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import br.com.gmail.comum.TecladoVirtual;
 import br.com.gmail.selenium.Selenium;
 
 public class CadastroDeNovaContaPage {
@@ -20,8 +23,9 @@ public class CadastroDeNovaContaPage {
 
 	}
 
-	public static void cadastra(String primeironome, String ultimonome, String emailgmail, String mes, String senha,
-			String confirmasenha, String dianascimento, String mesnascimento, String anonascimento, String telefone, String emailatual) {
+	public static void cadastra(String primeironome, String ultimonome, String emailgmail, String senha,
+			String confirmasenha, String dianascimento, String mesnascimento, String anonascimento, String telefone,
+			String emailatual) throws AWTException {
 
 		WebElement txtPrimeiroNome = driver.findElement(By.id("FirstName"));
 		WebElement txtUltimoNome = driver.findElement(By.id("LastName"));
@@ -29,32 +33,48 @@ public class CadastroDeNovaContaPage {
 		WebElement txtSenha = driver.findElement(By.id("Passwd"));
 		WebElement txtConfirmaSenha = driver.findElement(By.id("PasswdAgain"));
 		WebElement txtDiaNascimento = driver.findElement(By.id("BirthDay"));
-		Select cbMesNascimento = new Select(driver.findElement(By.id("BirthMonth")));
 		WebElement txtAnoNascimento = driver.findElement(By.id("BirthYear"));
 		WebElement txtTelefone = driver.findElement(By.id("RecoveryPhoneNumber"));
 		WebElement txtEmailAtual = driver.findElement(By.id("RecoveryEmailAddress"));
 		WebElement btProximaEtapa = driver.findElement(By.id("submitbutton"));
-	
-		
-		//selenium.getEval("scrollBy(0, 250)");
-		
-		
-		
 		WebElement btConcordo = driver.findElement(By.id("iagreebutton"));
-		
+
 		txtPrimeiroNome.sendKeys(primeironome);
 		txtUltimoNome.sendKeys(ultimonome);
 		txtEmailGmail.sendKeys(emailgmail);
 		txtSenha.sendKeys(senha);
 		txtConfirmaSenha.sendKeys(confirmasenha);
 		txtDiaNascimento.sendKeys(dianascimento);
-		cbMesNascimento.selectByVisibleText(mesnascimento);
+		selecionaComboMesNascimento();
 		txtAnoNascimento.sendKeys(anonascimento);
+		selecionaComboSexo();
 		txtTelefone.sendKeys(telefone);
 		txtEmailAtual.sendKeys(emailatual);
 		btProximaEtapa.click();
+		TecladoVirtual.END();
 		btConcordo.click();
 
 	}
-
+	
+	public static void selecionaComboMesNascimento() throws AWTException{
+		
+		TecladoVirtual.TAB();
+		TecladoVirtual.UP();
+		TecladoVirtual.UP();
+		TecladoVirtual.UP();
+		TecladoVirtual.ENTER();
+		
+	}
+	
+	public static void selecionaComboSexo() throws AWTException{
+		
+		TecladoVirtual.TAB();
+		TecladoVirtual.UP();
+		TecladoVirtual.UP();
+		TecladoVirtual.UP();
+		TecladoVirtual.UP();
+		TecladoVirtual.ENTER();
+		
+	}
+	
 }

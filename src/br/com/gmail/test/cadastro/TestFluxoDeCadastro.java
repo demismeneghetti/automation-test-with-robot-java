@@ -1,5 +1,7 @@
 package br.com.gmail.test.cadastro;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.Test;
 
 import br.com.gmail.pages.CadastroDeNovaContaPage;
@@ -8,11 +10,13 @@ import br.com.gmail.pages.InicialPage;
 public class TestFluxoDeCadastro {
 
 	@Test
-	public static void cadastroValido() {
+	public static void cadastroValido() throws AWTException {
 
 		InicialPage.visita();
 		InicialPage.CadastroDeNovaContaPage();
-		CadastroDeNovaContaPage.cadastra("Teste", "Gmail", "20160727", "20160727", "20160727", "20160727", "30", "Novembro", "1980", "11988776655", "email@atual.com.br");
+		CadastroDeNovaContaPage.cadastra("João", "Silva", "email20160728", "senha20160728", "senha20160728", "30",
+				"Novembro", "1980", "11988776655", "emailatual@teste.com.br");
+
 		
 		
 	}
